@@ -5,6 +5,21 @@ qainsightspreport는 AI 기반 서비스의 안정성과 성능을 검증하기 
 기존 성능 테스트는 단순히 부하 테스트를 실행하고 결과를 확인하는 수준에 머무르는 경우가 많습니다.
 qainsightspreport는 이러한 방식에서 벗어나 **성능 테스트 실행 → 결과 수집 → 기준선 비교 → AI 기반 병목 분석 → 자동 리포트 생성** 까지 전체 과정을 자동화하는 것을 목표로 개발하였습니다.
 
+## Automated Analysis Pipeline
+
+qainsightspreport runs benchmarks through an automated analysis pipeline:
+
+```text
+Dataset/Task
+    ↓
+qainsightspreportmark Runner
+    ↓
+Metric Collection
+    ↓
+Result Analysis
+    ↓
+Report Generation
+
 ---
 
 ## 프로젝트 목표
